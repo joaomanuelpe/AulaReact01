@@ -20,7 +20,6 @@ export default class Data extends Component {
 
     //fase de montagem
     componentDidMount() {
-        console.log("O componente foi montado.");
         //não é permitido atualizar o estado do componente de forma direta
         //this.state = ....
         this.setState({
@@ -29,7 +28,6 @@ export default class Data extends Component {
     }
 
     componentDidUpdate() {
-        console.log("O componente foi atualizado.");
         setTimeout(() => {
             this.setState({ dataAtual: this.pegarDataDe(this.props.timeZone).toLocaleString() });
         }, 1000);
