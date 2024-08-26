@@ -37,6 +37,6 @@ export default class Data extends Component {
     render() {
         return (
             <h1>{this.props.texto || ""} {this.state.dataAtual}</h1>
-        )
+            )
     }
 }
